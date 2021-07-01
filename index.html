@@ -8,16 +8,254 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style>
+			.container {
+				margin-bottom: 1rem;
+			}
+			
+			.row {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+
+			.text-left {
+				text-align: left;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h2>Intro to Web and Mobile Accessibility</h2>
+				</section>
+				<section>
+					<h6>What is Accessibility?</h6>
+					<br/>
+					<p class="fragment fade-in text-left">A measure of how simply a person can participate in an activity.</p>
+					<aside class="notes">
+						I like this definition.
+
+						it's a measure of how simple a person can participate in an activity.
+
+						So, an accessible product is a product that can be used by anyone, regardless of ability.
+					</aside>
+				</section>
+				<section>
+					<h6>Accessibility vs Inclusive Design</h6>
+					<br/>
+					<img style="max-width: 450px" src="./images/diversity.png"/>
+					<aside class="notes">
+						When people think of designing for accessibility they may often think of inclusive design.
+
+						Inclusive design is creating designs that take into account personal identifiers such as ability, race, economic status,
+						language, age, and gender. 
+
+						Inclusive designs help everyone feel welcome to use a product.
+
+						Accessibility, in how I refer to it, is a subset of inclusive design.
+						It's making product available to people no matter what their ability.
+					</aside>
+				</section>
+				<section>
+					<h6>Types of Disabilities</h6>
+					<ul>
+						<li class="fragment fade-in">Visual</li>
+						<li class="fragment fade-in">Hearing</li>
+						<li class="fragment fade-in">Motor</li>
+						<li class="fragment fade-in">Cognitive</li>
+					</ul>
+					<aside class="notes">
+						What are some type of disabilities?
+
+						There are visual disabilities such as blindness, color blindness, or just low vision in general
+
+						The are hearing disabilities such as being deaf or hard of Hearing
+
+						There are motor disabilities that can prevent people from using tools like mice or keyboards
+
+						There are also cognitive disabilities that can prevent people from reading long strings of text 
+						or prevent them from reading text using certain types of fonts
+						
+					</aside>
+				</section>
+				<section>
+					<h6>Permanent vs Temporary vs Situational Disabilities</h6>
+					<div class="row fragment fade-in">			
+						<img style="max-width: 450px" src="./images/rolling-pin.jpeg"/>
+						<img style="max-height: 500px" src="./images/types-of-disabilities.jpeg"/>
+					</div>
+					<aside class="notes">
+						When you think of disabilities you may think they are permanent.
+						However that is not true. They can be temporary or situational as well.
+
+						That's a rolling pin.
+						You need two hands to use it.
+						However some people however may not have two hands to use.
+						This can be due to something like a permanent injury where they only have one arm.
+						Or they have broken an arm and currently only have use of one hand.
+						Or they may be holding on to something, like a baby, and can only use one hand at the moment.
+
+						This applies to all sorts of abilities.
+						Another example regards hearing. 
+						You may be born deaf. 
+						Or you may have an ear infection and can't hear as well.
+						Or you may be at a loud concert and can't hear what the person next to you is trying to tell you.
+
+					</aside>
+				</section>
+				<section>
+					<h6>Accessibility in Everyday Life</h6>
+					<ul>
+						<li>Large print books</li>
+						<li>Wheelchair ramps</li>
+					</ul>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section>
+					<h6>Accessibility on Computers</h6>
+					<div class="row">
+						<div class="fragment fade-in">
+							<p style="font-size: 1.5rem;">Screen Reader Software</p>
+							<img style="max-width: 300px" src="./images/screen-readers.png"/>
+						</div>
+						<div class="fragment fade-in">
+							<p style="font-size: 1.5rem;">Screen Magnifiers</p>
+							<img style="max-width: 300px" src="./images/magnify.png"/>
+						</div>
+						<div class="fragment fade-in">
+							<p style="font-size: 1.5rem;">Closed Captions</p>
+							<img style="max-width: 300px" src="./images/closed-captions.png"/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="fragment fade-in">
+							<p style="font-size: 1.5rem;">Eye Tracking Devices</p>
+							<img style="max-width: 200px" src="./images/eye-tracking.jpeg"/>
+						</div>
+						<div class="fragment fade-in">
+							<p style="font-size: 1.5rem;">Keyboard Overlays</p>
+							<img style="max-width: 250px" src="./images/keyboard-overlay.jpg"/>
+						</div>
+						<div class="fragment fade-in">
+							<p style="font-size: 1.5rem;">Braille Displays</p>
+							<img style="max-width: 300px" src="./images/braille-display.jpeg"/>
+						</div>
+					</div>
+					<aside class="notes">
+						JAWS, aka Jobs Access With Speech ($95/year, Windows only), 
+						NVDA, aka None Visual Desktop Access (free, Windows only),
+						VoiceOver, comes with Mac
+					</aside>
+				</section>
+				<section>
+					<h6>Accessibility on Mobile Devices</h6>
+					<div class="row">
+						<div class="fragment fade-in">
+							<p style="font-size: 1.5rem;">VoiceOver (iOS)</p>
+							<img style="max-width: 300px" src="./images/ios-voiceover.png">
+						</div>
+						<div class="fragment fade-in">
+							<p style="font-size: 1.5rem;">TalkBack (Android)</p>
+							<img style="max-width: 300px" src="./images/android-talkback.png"/>
+						</div>
+						<div class="fragment fade-in">
+							<p style="font-size: 1.5rem;">Braille Keyboards</p>
+							<img style="max-width: 300px" src="./images/ipad-keyboard.png"/>
+						</div>
+					</div>
+					<aside class="notes">
+
+					</aside>
+				</section>
+				<section>
+					<h6>Accessible ≠ Usable</h6>
+					<div class="fragment fade-in"><img style="max-width: 450px" src="./images/phone-number.gif"/></div>
+					<aside class="notes">
+						It's also important to know that something that is accessible doesn't necessarily mean that it's usable.
+						We've all see our fair share of really bad UX.
+						Sure, you can enter your phone number this way, but it's going to be a really awful experience and you're probably just going to give up.
+					</aside>
+				</section>
+				<section>
+					<h6>Alt Tags</h6>
+					<img src="./images/fender-support.png"/>
+					<aside class="notes">
+						Here's an example of accessible images creating a poor user experience.
+						When a person that is sight impaired uses the screen reader VoiceOver to navigate this support page, 
+						they'll find that the images use alt tags, which allows the screen reader to read a description of an image.
+
+						However when they navigate to this image, the screen reader will read out "Snip 2 0 2 0 0 9 0 1 underscore 6 8 dot p n g image"
+						That's not very useful. And it can also get really annoying.
+						A better alt tag would be "A screenshot of navigating to Collections, as explained on the page"
+					</aside>
+				</section>
+				<section>
+					<h6>Skip Links</h6>
+					<img src="./images/nytimes.png"/>
+					<aside class="notes">
+						When you think about usability for people with disabilities, you can add helpful features such as skip links.
+						Skip links are a way to improve the navigation experience for users that use screen readers or keyboards.
+						Here is an example of a skip link from the New York Times.
+						It's only visible to keyboard and screen reader users and allows you to skip stepping through all of the navigation that's on top and go directly to the page content
+					</aside>
+				</section>
+				<section>
+					<h6>So Why Does Accessibility Matter?</h6>
+					<ul>
+						<li class="fragment fade-in">It's the right thing to do.</li>
+						<li class="fragment fade-in">It makes everyone's life easier.</li>
+						<li class="fragment fade-in">It's good for SEO.</li>
+						<li class="fragment fade-in">It'll keep you from getting sued.</li>
+						<li class="fragment fade-in">It's great for business.</li>
+					</ul>
+					<aside class="notes">
+						So why does all of this stuff I'm talking about even matter?
+						There are a number of reasons.
+
+						First, it's the right thing to do. You shouldn't exclude people from using your products.
+
+						It also makes everyone's life easier.
+						If you are designing for people with disabilities, then you are creating
+						intuitive and efficient content that is easy for everyone to use.
+						And then if a user experiences a change in their abilities, they can continue to use your product.
+
+						It's good for SEO.
+						Using semantic HTML and things like video and audio transcripts give you a big SEO bump.
+
+						It'll keep your from getting sued.
+						Failure to comply with the Web Content Accessibility Guidelines can and have resulted in lawsuits.
+						In 2020, there were over 10,000 ADA Title III lawsuits filed in U.S. federal courts.
+
+						It's great for business.
+						You reach more people. SO many people have disabilities. This is your chance to reach them.
+						And people like to use sites that 
+
+						In 2018, Accenture Strategy surveyed 30,000 consumers and found that 62% of consumers prefer to make purchases
+						from brands that are willing to take a stand on issues that matter. 
+						And 47% are willing to walk away if they are disappointed with a company's actions.
+					</aside>
+				</section>
+				<section>
+					<div>
+						<blockquote style="font-size: 1.5rem;">
+							Accessibility is the right thing to do. And not just the right
+							thing; it’s profoundly the right thing to do, because the one
+							argument for accessibility that doesn’t get made nearly often
+							enough is how extraordinarily better it makes some people’s
+							lives. How many opportunities do we have to dramatically
+							improve people’s lives just by doing our job a little better?
+						</blockquote>
+						<cite style="font-size: 1.25rem;">—Steve Krug</cite>
+					</div>
+					<img style="max-width: 200px;" src="./images/dont-make-me-think.png"/>
+				</section>
 			</div>
 		</div>
 
