@@ -5,4 +5,3 @@
 1. Run `yarn`
 2. Run `yarn start`
 3. Head to `localhost:8000`
-```
