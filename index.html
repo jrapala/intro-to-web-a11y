@@ -4,28 +4,67 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Intro to Web and Mobile Accessibility</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/white.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="static/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="static/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png">
+		<link rel="manifest" href="static/site.webmanifest">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 		<style>
-			.container {
-				margin-bottom: 1rem;
-			}
-			
 			.row {
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
 			}
 
+			.small {
+				font-size: 1.5rem;
+				margin: 0 !important;
+				margin-top: -20px !important;
+			}
+			
+			.small-list {
+				padding: 0 50px 0 0;
+				font-size: 1.5rem;
+			}
+
 			.text-left {
 				text-align: left;
 			}
+
+			.image-caption {
+				font-size: 1.5rem;
+				margin-bottom: 0 !important;
+			}
+
+			table {
+				width: 80%;
+				border-width: 2px;
+				border-color: #000000;
+				border-style: solid;
+			}
+
+			.table-caption {
+				margin-bottom: 1rem;
+			}
+
+			code {
+				background-color: #080709;
+				color: white;
+			}
+
+			#contrast-image {
+				position: absolute;
+				top: 60px;
+				margin-left: 100px;
+			}
+		
 		</style>
 	</head>
 	<body>
@@ -35,7 +74,7 @@
 					<h2>Intro to Web and Mobile Accessibility</h2>
 				</section>
 				<section>
-					<h6>What is Accessibility?</h6>
+					<h6>What is Accessibility? 🤔</h6>
 					<br/>
 					<p class="fragment fade-in text-left">A measure of how simply a person can participate in an activity.</p>
 					<aside class="notes">
@@ -65,10 +104,10 @@
 				<section>
 					<h6>Types of Disabilities</h6>
 					<ul>
-						<li class="fragment fade-in">Visual</li>
-						<li class="fragment fade-in">Hearing</li>
-						<li class="fragment fade-in">Motor</li>
-						<li class="fragment fade-in">Cognitive</li>
+						<li class="fragment fade-in">Visual 👓</li>
+						<li class="fragment fade-in">Hearing 👂</li>
+						<li class="fragment fade-in">Motor 🦽</li>
+						<li class="fragment fade-in">Cognitive 🧠</li>
 					</ul>
 					<aside class="notes">
 						What are some type of disabilities?
@@ -86,9 +125,9 @@
 				</section>
 				<section>
 					<h6>Permanent vs Temporary vs Situational Disabilities</h6>
-					<div class="row fragment fade-in">			
-						<img style="max-width: 450px" src="./images/rolling-pin.jpeg"/>
-						<img style="max-height: 500px" src="./images/types-of-disabilities.jpeg"/>
+					<div class="row">			
+						<img style="max-width: 450px" class="fragment fade-in" src="./images/rolling-pin.jpeg"/>
+						<img style="max-height: 500px" class="fragment fade-in" src="./images/types-of-disabilities.jpeg"/>
 					</div>
 					<aside class="notes">
 						When you think of disabilities you may think they are permanent.
@@ -108,7 +147,80 @@
 						Or you may be at a loud concert and can't hear what the person next to you is trying to tell you.
 
 					</aside>
+				</section>				
+				<section>
+					<h6>How Common are Disabilities?</h6>
+					<br/>
+					<div class="fragment fade-in">
+						<table>
+							<caption class="table-caption">Adults in the United States (<a href="https://www.cdc.gov/nchs/fastats/disability.htm">CDC, 2019</a>)</caption>
+							<thead>
+								<tr>
+									<th>Disability</th><th>%</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="fragment fade-in">
+									<td>Mobility</td><td>18.6%</td>
+								</tr>
+								<tr class="fragment fade-in">
+									<td>Sight</td><td>16.4%</td>
+								</tr>
+								<tr class="fragment fade-in">
+									<td>Hearing</td><td>14.6%</td>
+								</tr>
+								<tr class="fragment fade-in">
+									<td>Cognitive</td><td>16.4%</td>
+								</tr>
+							</tbody>
+						</table>		
+					</div>
+					<aside class="notes">
+
+					</aside>
 				</section>
+				<section>
+					<h6>1 in 4 US Adults Live With a Disability (<a href="https://www.cdc.gov/media/releases/2018/p0816-disability.html">CDC</a>)</h6>
+					</br>
+					<img src="./images/one-in-four.png"/>
+				</section>
+				<section>
+					<h6>People With Disabilities Live Full & Active Lives</h6>
+					</br>
+					<div class="row">
+						<ul class="small-list">
+							<li class="fragment fade-in">Disabled people cook 🍳</li>
+							<br/>
+							<li class="fragment fade-in">Disabled people travel 🚗</li>
+							<br/>
+							<li class="fragment fade-in">Disabled people shop 🤑</li>
+							<br/>
+							<li class="fragment fade-in">Disabled people take photos 📸</li>
+							<br/>
+							<li class="fragment fade-in">Disabled people play music 🎸</li>
+						</ul>
+						<div class="fragment fade-in">
+							<img src="images/jeff-healey.jpeg"/>
+							<p class="small">Jeff Healey</p>
+						</div>
+						<div class="fragment fade-in">
+							<img style="max-width: 300px" src="images/stevie-wonder.jpeg"/>
+							<p class="small">Stevie Wonder</p>
+						</div>
+					</div>
+					<aside class="notes">
+						Disabilities are very common, but it's also important to realize that people with disabilities have very full lives.
+						Disabled people cook
+						Disabled people travel.
+						Disabled people shop.
+						Disable people work out.
+						Disabled people play music.
+
+						There's Jeff Healey, who was a successful jazz guitarist, with a strat.
+						There's Stevie Wonder. I dunno. One of the greatest musicians ever?
+
+					</aside>
+				</section>				
 				<section>
 					<h6>Accessibility in Everyday Life</h6>
 					<div class="row">
@@ -151,29 +263,29 @@
 					<h6>Accessibility on Computers</h6>
 					<div class="row">
 						<div class="fragment fade-in">
-							<p style="font-size: 1.5rem;">Screen Reader Software</p>
+							<p class="image-caption">Screen Reader Software</p>
 							<img style="max-width: 300px" src="./images/screen-readers.png"/>
 						</div>
 						<div class="fragment fade-in">
-							<p style="font-size: 1.5rem;">Screen Magnifiers</p>
+							<p class="image-caption">Screen Magnifiers</p>
 							<img style="max-width: 300px" src="./images/magnify.png"/>
 						</div>
 						<div class="fragment fade-in">
-							<p style="font-size: 1.5rem;">Closed Captions</p>
+							<p class="image-caption">Closed Captions</p>
 							<img style="max-width: 300px" src="./images/closed-captions.png"/>
 						</div>
 					</div>
 					<div class="row">
 						<div class="fragment fade-in">
-							<p style="font-size: 1.5rem;">Eye Tracking Devices</p>
+							<p class="image-caption">Eye Tracking Devices</p>
 							<img style="max-width: 200px" src="./images/eye-tracking.jpeg"/>
 						</div>
 						<div class="fragment fade-in">
-							<p style="font-size: 1.5rem;">Keyboard Overlays</p>
+							<p class="image-caption">Keyboard Overlays</p>
 							<img style="max-width: 250px" src="./images/keyboard-overlay.jpg"/>
 						</div>
 						<div class="fragment fade-in">
-							<p style="font-size: 1.5rem;">Braille Displays</p>
+							<p class="image-caption">Braille Displays</p>
 							<img style="max-width: 300px" src="./images/braille-display.jpeg"/>
 						</div>
 					</div>
@@ -187,21 +299,126 @@
 					<h6>Accessibility on Mobile Devices</h6>
 					<div class="row">
 						<div class="fragment fade-in">
-							<p style="font-size: 1.5rem;">VoiceOver (iOS)</p>
+							<p class="image-caption">VoiceOver (iOS)</p>
 							<img style="max-width: 300px" src="./images/ios-voiceover.png">
 						</div>
 						<div class="fragment fade-in">
-							<p style="font-size: 1.5rem;">TalkBack (Android)</p>
+							<p class="image-caption">TalkBack (Android)</p>
 							<img style="max-width: 300px" src="./images/android-talkback.png"/>
 						</div>
 						<div class="fragment fade-in">
-							<p style="font-size: 1.5rem;">Braille Keyboards</p>
+							<p class="image-caption">Braille Keyboards</p>
 							<img style="max-width: 300px" src="./images/ipad-keyboard.png"/>
 						</div>
 					</div>
 					<aside class="notes">
-
+						Mobile devices offer a few accessibility solutions as well.
+						There is the VoiceOver screen reader for iOS and TalkBack for Android
+						Both platforms also offer braille keyboards for the sight impaired
+						There's also things like dictation - voice to text - or keyboards and switch controls, for people with motor disabilities 
+						Color settings like high contrast mode
+						Android also offers BrailleBack, which allows users to use a braille device for reading text
 					</aside>
+				</section>
+				<section>
+					<h6>How Do We Build Accessible Applications?</h6>
+					<aside class="notes">
+					So the tools exist that let humans interact with the web and applications.
+					However we as developers need to build things correctly so they can support these assistive devices.
+					</aside>
+				</section>
+				<section>
+					<h6>Building Accessible Web Applications</h6>
+					<ul>
+						<li class="fragment fade-in">Semantic HTML</li>
+						<li class="fragment fade-in">Keyboard support</li>
+						<li class="fragment fade-in">ARIA</li>
+					</ul>
+					<aside class="notes">
+						How do we do this on the web?
+						The easiest thing you can do is use Semantic HTML.
+						It's using tags like section, article, header, nav, p, and headings to reinforce the meaning
+						of information on a page.
+						Screen readers know what to do with semantic HTML.
+						If you use a div for everything, the screen reader won't know what to do.
+
+						Earlier I mentioned that 19% of adult have difficulties with mobility
+						If you think about it, a mouse is a fairly difficult thing to use. It requires pretty fine motor control. 
+						Many people cannot use mice. They use keyboards, foot pedals, and other assistive devices instead.
+						Browsers have keyboard listeners that let you navigate a page with one.
+						We need to make sure we don't turn off focus styles that let a user where their current location is.
+
+						ARIA is an API that allows you add accessibility support to your HTML.
+						It stands for Accessible Rich Internet Applications
+						Using semantic HTML can get you really far, however the designs that are implemented may need
+						extra help from ARIA is order to accurately communicate how a user can interact with a screen.
+
+						A simple example is a toggle icon button, like the Favorite heart buttons we have in the Play app.
+						You can visually recognize if a lesson is favorited by the color of the icon. What happens if you cannot
+						see the icon though? Then you need to add support with an attribute like aria-pressed, which is a boolean
+						that tells you if a button is toggled or not.
+					</aside>
+				</section>
+				<section>
+					<h6>Building Accessible Mobile Applications</h6>
+					<div class="fragment fade-in">
+						<div class="row">
+							<div>
+								<p class="image-caption">iOS (SwiftUI)</p>
+								<img style="max-width: 400px" src="./images/swift.png"/>
+							</div>
+							<div>
+								<p class="image-caption">Android (Kotlin)</p>
+								<img style="max-width: 400px" src="./images/kotlin.png"/>
+							</div>
+						</div>
+						<div>
+							<p class="image-caption">Cross-Platform (React Native/JavaScript)</p>
+							<img style="max-width: 400px" src="./images/rn.png"/>
+						</div>
+					</div>
+					<aside class="notes">
+						Similar to semantic HTML, a lot of accessibility comes for free when building native mobile applications.
+						However accessibility APIs exist for both iOS and Android to fill in the gaps.
+						These APIs can be accessed in whatever way you want to build apps.
+					</aside>
+				</section>
+				<section>
+					<h6>🎉 Easy Accessibility Wins 🎉</h6>
+					<br/>
+					<ol>
+						<li class="fragment fade-in">Use semantic HTML</li>
+						<li class="fragment fade-in">Use your keyboard</li>
+						<li class="fragment fade-in">Use a contrast checker <img id="contrast-image" src="/images/contrast.png"/></li>
+						<li class="fragment fade-in">Describe your images</li>
+						<li class="fragment fade-in"><code>&:hover</code> ➡️ <code>&:hover, &:focus</code> </li>
+						<li class="fragment fade-in">Run a Lighthouse audit</li>
+					</ol>
+					<aside class="notes">
+						When we build applications as developers, we tend to build for people that have the same abilities that we do.
+						Instead we should start thinking about the other ways people interact with applications.
+						One way to start this shift is to keep a list of easy accessibility wins in the back of your head as you develop.
+						These are simple checks that don't require turning on the screen reader and can help prevent accessibility bugs before they
+						spiral out of control.
+
+						1. Use semantic HTML. If it's a button, use the button tag. Don't use the div tag. It's not a div, it's a button.
+						2. Use your keyboard. If you build a new feature, and it's interactive, make your sure you can get there with a keyboard.
+						And make sure there's a visual feedback to show you where you are on the screen.
+						3. Use a contrast checker. This is built into almost all browser dev tools. Xcode also has one.
+						Make sure the contrast ratio of text to background is at least 4.5:1
+						3. Describe your images. Add an description or hide it from a screen reader if it's decorative. 
+						4. Adding a focus style? Target hover as well. The style should apply to both.
+						5. If you're using Chrome, run a quick Lighthouse audit. It won't find all of the issues, but it will highlight
+						a lot that can be easily fixed
+					</aside>
+				</section>
+				<section>
+					<h6>Lighthouse</h6>
+					<img src="/images/lighthouse-01.png" />
+				</section>
+				<section>
+					<h6>Lighthouse</h6>
+					<img style="max-width: 800px" src="/images/lighthouse-02.png" />
 				</section>
 				<section>
 					<h6>Accessible ≠ Usable</h6>
